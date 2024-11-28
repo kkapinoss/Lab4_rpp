@@ -1,11 +1,11 @@
-name: CI_pipeline 
+name: Deploy 
 
 on:
   release:
     types: [published]
 
 jobs:
-  firstjob:
+  deploy:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout code
