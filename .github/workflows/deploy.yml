@@ -1,4 +1,4 @@
-name: Deploy 
+name: Danek 
 
 on:
   release:
@@ -21,7 +21,7 @@ jobs:
           cp -r "./${file}" "$SITE/"
         done
 
-    - name: Deploy to GitHub Pages
+    - name: Deploy in gh-pages
       uses: peaceiris/actions-gh-pages@v4
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
